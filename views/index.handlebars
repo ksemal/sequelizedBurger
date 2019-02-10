@@ -13,8 +13,8 @@
                 {{#unless devoured}}
                 <li><i class="fas fa-hamburger"></i>
                     <span>&nbsp;&nbsp;</span>{{burger_name}}
-                    <div class="input-group customer-name mt-3">
-                        <input type="text" class="form-control" placeholder="Customer">
+                    <div class="input-group customer-form mt-3">
+                        <input type="text" class="form-control customer-name" placeholder="Customer">
                         <div class="input-group-append">
                             <button class="btn btn-outline-warning devour" data-id="{{id}}">DEVOUR
                                 IT!</button>
@@ -32,7 +32,7 @@
                 {{#each burgers}}
                 {{#if devoured}}
                 <li><i class="fas fa-utensils"></i> <span>&nbsp;&nbsp;</span>{{burger_name}}
-                    <span>&nbsp;&nbsp;</span>(Eaten by {{customer_name}})</li>
+                    <span>&nbsp;&nbsp;</span>(Eaten by {{Customer.customer_name}})</li>
                 <hr>
                 {{/if}}
                 {{/each}}
