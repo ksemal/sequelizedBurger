@@ -14,10 +14,12 @@ module.exports = function(app) {
       {
         where: {
           id: req.params.id
-        }
+        },
+        include: [db.Customer],
+        order: [["burger_name", "ASC"]]
       }
     ).then(function(result) {
-      res.json({ id: result.affectedRows });
+      res.render("index", { customer: result.affectedRows });
     });
   });
 };
