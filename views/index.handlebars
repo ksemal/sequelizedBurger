@@ -1,6 +1,6 @@
 <div class="container">
     <div class="row">
-        <div class="col-sm-4">
+        <div class="col-sm-5">
             <h1>Eat Da Burger!</h1>
             <div class="input-group mb-3">
                 <input type="text" class="form-control burger-name" placeholder="Enter a burger you want to eat">
@@ -13,10 +13,12 @@
                 {{#unless devoured}}
                 <li><i class="fas fa-hamburger"></i>
                     <span>&nbsp;&nbsp;</span>{{burger_name}}
-                    <input type="text" class="form-control customer-name" placeholder="Customer">
-                    <div class="input-group-append">
-                        <button class="btn btn-outline-warning devour" data-id="{{id}}">DEVOUR
-                            IT!</button>
+                    <div class="input-group customer-name mt-3">
+                        <input type="text" class="form-control" placeholder="Customer">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-warning devour" data-id="{{id}}">DEVOUR
+                                IT!</button>
+                        </div>
                     </div>
                 </li>
                 <hr>
@@ -24,7 +26,7 @@
                 {{/each}}
             </ul>
         </div>
-        <div class="col-sm-4 bg"></div>
+        <div class="col-sm-3 bg"></div>
         <div class="col-sm-4 bg2">
             <ul class="eatenburgers">
                 {{#each burgers}}

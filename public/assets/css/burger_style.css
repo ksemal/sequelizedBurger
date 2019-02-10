@@ -28,19 +28,22 @@ h1 {
   font-size: 55px;
   margin-bottom: 30px;
 }
+.devour {
+  font-size: 12px;
+}
 .form-control {
   background-color: black;
   border-color: rgba(255, 255, 255, 0.555);
   font-size: 20px;
+  float: right;
+}
+.customer-name {
+  width: 60%;
 }
 .allburgers {
   height: 400px;
   overflow: scroll;
   margin-top: 40px;
-}
-.devour {
-  float: right;
-  font-size: 12px;
 }
 li {
   margin-bottom: 10px;
