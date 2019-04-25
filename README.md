@@ -24,3 +24,7 @@ A burger logger application with MySQL, Node, Express, Handlebars using Sequeliz
 - [express-handlebars.js]
 
 I think the biggest technical challenge was to write an ORM from scratch.
+
+## Screenshots:
+
+![project screenshots](public/assets/img/screencapture.png)
